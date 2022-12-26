@@ -1,0 +1,22 @@
+{
+  "baseDir": "./files",
+  "files": [
+    {
+      "path": "main.bin",
+      "maxSize": "250kb"
+    },
+    {
+      "path": "*.txt",
+      "maxSize": "250kb"
+    }
+  ],
+  "groups": [
+    {
+      "path": "**/*.txt"
+    }
+  ],
+  "reportOutput": [
+    ["github", { "checkRun": true, "commitStatus": true, "prComment": true }]
+  ],
+  "verbose": true
+}
