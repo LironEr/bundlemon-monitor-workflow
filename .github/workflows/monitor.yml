@@ -23,3 +23,7 @@ jobs:
         run: node genFiles.js
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_user_name: Changes Generator Bot
+          commit_user_email: monitor@bundlemon.dev
+          commit_author: Monitor <monitor@bundlemon.dev>
