@@ -11,6 +11,6 @@ function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-generateFileWithRandomString("main.bin", generateRandomNumber(200, 225));
-generateFileWithRandomString("a.txt", 50);
-generateFileWithRandomString("b.txt", generateRandomNumber(100, 150));
+generateFileWithRandomString("main.bin", generateRandomNumber(5, 10));
+generateFileWithRandomString("a.txt", 3);
+generateFileWithRandomString("b.txt", generateRandomNumber(1, 5));
