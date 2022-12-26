@@ -20,6 +20,6 @@ jobs:
           node-version: "18"
 
       - name: Generate changes
-        run: node genfiles.js
+        run: pwd & ls
 
       - uses: stefanzweifel/git-auto-commit-action@v4
