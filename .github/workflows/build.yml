@@ -14,9 +14,7 @@ jobs:
       - name: Use Node.js 18
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '18'
 
       - name: Run BundleMon
-        run: npx bundlemon
-        env:
-          CI_COMMIT_SHA: ${{github.event.pull_request.head.sha || github.sha}} # important!
+        uses: lironer/bundlemon-action@v1
